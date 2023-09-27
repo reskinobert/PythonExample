@@ -2,7 +2,9 @@ def groups_per_user(group_dictionary):
     user_groups = {}
     for group, users in group_dictionary.items():
         for user in users:
-            if user not in user_groups:
+	    # check if there is no user exist to create list for group(groups_per_user value's)
+	    # it is to avoid the new group overide the old groups_per_user when adding new group to group's list
+            if user not in user_groups:  
                 user_groups[user] = []
             user_groups[user].append(group)
     return user_groups
