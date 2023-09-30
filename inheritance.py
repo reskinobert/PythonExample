@@ -25,13 +25,13 @@ class Hawk(Animal):
 
 
 rabbit = Rabbit()
-fish = Fish()
+fish = Fish() 
 hawk = Hawk()
 
-print(rabbit.alive)
-fish.eat()
-hawk.sleep()
+print(rabbit.alive) # True
+fish.eat() # This animal is eating
+hawk.sleep() # This animal is sleeping
 
-rabbit.run() 
-fish.swim()
-hawk.fly()
+rabbit.run() # This rabbit is running
+fish.swim() # This fish is swimming
+hawk.fly() # This hawk is flying
